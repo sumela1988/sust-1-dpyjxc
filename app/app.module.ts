@@ -20,6 +20,7 @@ import { ProductListComponent } from './product-list/product-list.component';
         ReactiveFormsModule,
         HttpClientModule,
         routing
+        
     ],
     declarations: [
         AppComponent,
