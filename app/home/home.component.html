@@ -2,15 +2,22 @@
 <h1>Weclome to Baby Shopping List</h1>
 <p>Please find below the list to select from:</p>
 
-
-
-
-
-
-<div>
-    Users from secure api end point:
-    <ul>
-        <li *ngFor="let user of users">{{user.firstName}} {{user.lastName}}</li>
-    </ul>
+<div *ngFor="let product of products">
+  <table>
+    <tbody>
+      <tr>
+        <td><h4>Items</h4></td>
+        <td><h4>Link</h4></td>
+        <td><h4>Name</h4></td>
+      </tr>
+        <tr>
+          <td><h3>{{ product.name}}</h3></td>
+          <td><h3>{{ product.URL}}</h3></td>
+          <td><input id="name" type="text" formControlName="name"></td>
+        </tr>
+    </tbody>
+  </table>
 </div>
+
+
 <p><a [routerLink]="['/login']">Logout</a></p>

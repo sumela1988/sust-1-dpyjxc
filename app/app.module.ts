@@ -12,7 +12,7 @@ import { routing }        from './app.routing';
 import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
-import { ProductListComponent } from './product-list/product-list.component';
+
 
 @NgModule({
     imports: [
@@ -26,7 +26,7 @@ import { ProductListComponent } from './product-list/product-list.component';
         AppComponent,
         HomeComponent,
         LoginComponent,
-        ProductListComponent
+
     ],
     providers: [
         { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
