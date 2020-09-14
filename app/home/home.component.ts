@@ -17,6 +17,10 @@ export class HomeComponent implements OnInit {
       this.names.push(newName);
     }
   }
+    clearNames(){
+      this.names=[];
+      return this.names;
+    }
 
     constructor(private userService: UserService) {}
 
