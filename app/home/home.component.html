@@ -1,23 +1,55 @@
 
-<h1>Weclome to Baby Shopping List</h1>
-<p>Please find below the list to select from:</p>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+p {
+  margin:20px;
+  font-size: 1.0em;
+  margin-bottom: 2;
+  margin-top: 200;
+  padding-top: 5px;
+}
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1500px) {
+  .column {
+    width: 90%;
+  }
+}
+span{
+  position: absolute;
+}
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<a [routerLink]="['/']">
+  <h1><i class="fa fa-home"></i> Baby Shower List</h1>
+</a>
+<a class="button fancy-button" style="background-color: white" [routerLink]="['/login']" >Logout <i class="fa fa-sign-out" style="color: #1976d2"></i></a>
+
+
+<h1>Welcome to Bledar + Symela 's Baby Boy Shower</h1>
+
+<p>Please find below the list of items to select from:</p>
 
 <div *ngFor="let product of products">
   <table>
     <tbody>
       <tr>
+        <td><h4>Picture</h4></td>
         <td><h4>Items</h4></td>
         <td><h4>Link</h4></td>
         <td><h4>Name</h4></td>
       </tr>
         <tr>
+          <td><img src={{product.picture}} width= 50%></td>
           <td><h3>{{ product.name}}</h3></td>
           <td><h3>{{ product.URL}}</h3></td>
-          <td><input id="name" type="text" formControlName="name"></td>
+          <td><ul><li *ngFor="let name of names">{{name}}</li></ul></td>
+          <td><input #newName (keyup.enter)="addName(newName.value)"(blur)="addName(newName.value); newName.value='' "><button (click)="addName(newName.value)">Add</button></td>
         </tr>
     </tbody>
   </table>
 </div>
 
 
-<p><a [routerLink]="['/login']">Logout</a></p>
+    
+

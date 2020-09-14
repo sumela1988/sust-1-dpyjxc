@@ -10,6 +10,13 @@ import { products } from '../products';
 export class HomeComponent implements OnInit {
     users: User[] = [];
     products = products;
+    names =[];
+
+    addName(newName: string) {
+    if (newName) {
+      this.names.push(newName);
+    }
+  }
 
     constructor(private userService: UserService) {}
 
