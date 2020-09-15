@@ -49,7 +49,7 @@ span{
           <td><h3>{{ product.name}}</h3></td>
           <td><h3>{{ product.URL}}</h3></td>
           <td><ul><li *ngFor="let name of names">{{name}}</li></ul></td>
-          <td><input #newName (keyup.enter)="addName(newName.value)"(blur)="addName(newName.value); newName.value='' "><button (click)="addName(newName.value)">Add name</button><button (click)="clearNames()">Clear names</button></td>
+          <td><input #newName id="inputName" (keyup.enter)="addName(newName.value)"(blur)="addName(newName.value); newName.value='' " ><button (click)="addName(newName.value)">Add name</button><button (click)="clearNames()">Clear names</button></td>
         </tr>
     </tbody>
   </table>

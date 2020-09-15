@@ -16,7 +16,9 @@ export class HomeComponent implements OnInit {
     if (newName) {
       this.names.push(newName);
     }
+    localStorage.setItem('names', JSON.stringify(this.names));
   }
+
     clearNames(){
       this.names=[];
       return this.names;
@@ -29,5 +31,6 @@ export class HomeComponent implements OnInit {
             this.users = users; 
             this.products = products;
         });
+        this.
     }
 }
