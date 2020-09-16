@@ -18,9 +18,17 @@ export class HomeComponent implements OnInit {
     }
     localStorage.setItem('names', JSON.stringify(this.names));
   }
+  getNames() {
+    if(localStorage.getItem('names')=== null){
+      this.names = [];
+    } else{
+        this.names = JSON.parse(localStorage.getItem('names'));
+    }
+  }
 
     clearNames(){
-      this.names=[];
+      this.names = [];
+      localStorage.removeItem('names');
       return this.names;
     }
 
@@ -31,6 +39,6 @@ export class HomeComponent implements OnInit {
             this.users = users; 
             this.products = products;
         });
-        this.
+        this.getNames();
     }
 }
