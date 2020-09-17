@@ -14,13 +14,6 @@ import { JwtInterceptor, ErrorInterceptor } from './_helpers';
 import { HomeComponent } from './home';
 import { LoginComponent } from './login';
 
-import { AngularFireModule } from 'angularfire2';
-import { FirebaseConfig } from './environments/firebase.config';
-import { AngularFirestoreModule } from 'angularfire2/firestore';
-import { AngularFireAuthModule } from 'angularfire2/auth';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
-
-
 
 @NgModule({
     imports: [
@@ -28,10 +21,6 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
         ReactiveFormsModule,
         HttpClientModule,
         FormsModule,
-        AngularFireModule.initializeApp(FirebaseConfig.firebase),
-        AngularFirestoreModule,
-        AngularFireAuthModule,
-        AngularFireDatabaseModule,
         routing
         
     ],
