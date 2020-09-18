@@ -49,12 +49,22 @@ span{
           <td><h3>{{ product.name}}</h3></td>
           <td><h3>{{ product.URL}}</h3></td>
           <td><ul><li *ngFor="let name of names">{{name}}</li></ul></td>
-          <td><input #newName id="inputName" (keyup.enter)="addName(newName.value)"(blur)="addName(newName.value); newName.value='' " ><button (click)="addName(newName.value)">Add name</button><button (click)="clearNames()">Clear names</button>
-          <button onclick="sendMail(); return false">Save</button></td>
+          <td><input #newName id="inputName" (keyup.enter)="addName(newName.value)"(blur)="addName(newName.value); newName.value='' " ><button (click)="addName(newName.value)">Add name</button><button (click)="clearNames()">Clear names</button></td>
         </tr>
     </tbody>
   </table>
 </div>
 
 
+<button onclick="sendMail(); return true">Save</button>
 
+<script>    
+function sendMail() {
+    var link = "mailto:sumela.mixa@gmail.com"
+             + "&subject=" + encodeURIComponent("This is my subject")
+             + "&body=" + encodeURIComponent(document.getElementById('inputName').value)
+    ;
+    
+    window.location.href = link;
+}
+</script>
