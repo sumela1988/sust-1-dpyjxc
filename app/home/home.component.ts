@@ -32,6 +32,8 @@ export class HomeComponent implements OnInit {
       return this.names;
     }
 
+
+
     constructor(private userService: UserService) {}
 
     ngOnInit() {
