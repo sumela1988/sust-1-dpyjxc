@@ -12,6 +12,9 @@ th, td {
   padding: 20px;
   text-align: left;
 }
+h4{
+  text-align: center;
+}
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1500px) {
@@ -35,7 +38,7 @@ span{
 
 <p>Please find below the list of items to select from:</p>
 
-<div *ngFor="let product of products">
+
   <table>
     <tbody>
       <tr>
@@ -44,7 +47,7 @@ span{
         <td><h4>Link</h4></td>
         <td><h4>Name</h4></td>
       </tr>
-        <tr>
+        <tr *ngFor="let product of products">
           <td><img src={{product.picture}} width= 50%></td>
           <td><h3>{{ product.name}}</h3></td>
           <td><h3>{{ product.URL}}</h3></td>
@@ -53,7 +56,7 @@ span{
         </tr>
     </tbody>
   </table>
-</div>
+
 
 
 <button onclick="sendMail(); return true">Save</button>
