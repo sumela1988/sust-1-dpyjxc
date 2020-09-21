@@ -48,9 +48,9 @@ span{
         <td><h4>Name</h4></td>
       </tr>
         <tr *ngFor="let product of products">
-          <td><img src={{product.picture}} width= 50%></td>
-          <td><h3>{{ product.name}}</h3></td>
-          <td><h3>{{ product.URL}}</h3></td>
+          <td># {{product.Nr}}<img src={{product.picture}} width= 70%></td>
+          <td><p>{{ product.name}}</p></td>
+          <td><p>{{ product.URL}}</p></td>
           <td><ul><li *ngFor="let name of names">{{name}}</li></ul></td>
           <td><input #newName id="inputName" (keyup.enter)="addName(newName.value)"(blur)="addName(newName.value); newName.value='' " ><button (click)="addName(newName.value)">Add name</button><button (click)="clearNames()">Clear names</button></td>
         </tr>
@@ -58,7 +58,7 @@ span{
   </table>
 
 
-
+<!--
 <button onclick="sendMail(); return true">Save</button>
 
 <script>    
@@ -71,3 +71,4 @@ function sendMail() {
     window.location.href = link;
 }
 </script>
+-->
