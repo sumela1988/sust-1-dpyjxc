@@ -51,8 +51,11 @@ span{
           <td># {{product.Nr}}<img src={{product.picture}} width= 70%></td>
           <td><p>{{ product.name}}</p></td>
           <td><p>{{ product.URL}}</p></td>
+          <td><p>{{ product.candidates}}</p></td>
+          <!--
           <td><ul><li *ngFor="let name of names">{{name}}</li></ul></td>
           <td><input #newName id="inputName" (keyup.enter)="addName(newName.value)"(blur)="addName(newName.value); newName.value='' " ><button (click)="addName(newName.value)">Add name</button><button (click)="clearNames()">Clear names</button></td>
+          -->
         </tr>
     </tbody>
   </table>
