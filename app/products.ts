@@ -99,7 +99,7 @@ export const products = [
         },
         {
             Nr: '15',
-            name: 'long sleeve t-shirts, size 62',
+            name: 'Long sleeve t-shirts, size 62',
             picture: 'https://ae01.alicdn.com/kf/HTB1qdNbXcnrK1RjSspkq6yuvXXaK.jpg_q50.jpg',
             URL: '-',
 			candidates:'-'
