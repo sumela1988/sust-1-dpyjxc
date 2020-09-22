@@ -44,13 +44,13 @@ span{
       <tr>
         <td><h4>Picture</h4></td>
         <td><h4>Items</h4></td>
-        <td><h4>Link</h4></td>
+        <td><h4>Store</h4></td>
         <td><h4>Name</h4></td>
       </tr>
         <tr *ngFor="let product of products">
           <td># {{product.Nr}}<img src={{product.picture}} width= 70%></td>
           <td><p>{{ product.name}}</p></td>
-          <td><p></p></td>
+          <td><a href={{product.URL}} target="_blank">Visit store's page!</a></td>
           <td><p>{{ product.candidates}}</p></td>
           <!--
           <td><ul><li *ngFor="let name of names">{{name}}</li></ul></td>
