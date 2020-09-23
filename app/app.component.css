@@ -3,10 +3,10 @@ body, html {
 }
 
 .background{
-  background-image: url('https://www.pinclipart.com/picdir/middle/126-1260590_tigger-winnie-the-pooh-clip-art-png-download.png'), url('https://i.pinimg.com/originals/b1/d1/43/b1d143a3ea61d80dfb6dc4a7856a1aef.jpg');
+  background-image: url('https://i.pinimg.com/originals/4a/a0/a3/4aa0a36c789ef80d3bf84c0632a7f601.png'), url('https://i.pinimg.com/originals/b1/d1/43/b1d143a3ea61d80dfb6dc4a7856a1aef.jpg');
     background-position: left , cover;
-     background-repeat: no-repeat, repeat;
-    background-size: 300px 400px, auto;
+     background-repeat: repeat, repeat;
+    background-size: 400px 400px, auto;
     height: 100%;
 }
 
