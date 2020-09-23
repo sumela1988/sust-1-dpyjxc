@@ -11,6 +11,7 @@ p {
 th, td {
   padding: 20px;
   text-align: left;
+  font-weight: bold;
 }
 h4{
   text-align: center;
@@ -18,7 +19,7 @@ h4{
 
 
 /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1200px) {
   .column {
     width: 90%;
   }
@@ -28,13 +29,13 @@ span{
 }
 </style>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" >
 <a [routerLink]="['/']">
-  <h1><i class="fa fa-home"></i> Baby Shower List</h1>
+  <h1 ><i class="fa fa-home"></i> Baby Shower List</h1>
 </a>
 <a class="button fancy-button" style="background-color: white" [routerLink]="['/login']" >Logout <i class="fa fa-sign-out" style="color: #1976d2"></i></a>
 
-<body class = background>
+
 <h1>Welcome to Bledar + Symela 's </h1>
 <h1>Baby Boy Shower Party</h1>
 
@@ -61,7 +62,7 @@ span{
         </tr>
     </tbody>
   </table>
-</body>
+
 
 <!--
 <button onclick="sendMail(); return true">Save</button>
