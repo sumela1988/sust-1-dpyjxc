@@ -4,7 +4,7 @@ export const products = [
             name: 'Fisher-Price Kick And Play Piano Gym',
             picture: 'https://pricespy-75b8.kxcdn.com/product/standard/280/3454507.jpg',
             URL: 'https://www.bol.com/nl/p/fisher-price-kick-and-play-piano-gym/9200000020487658/',
-			candidates:'-'
+			candidates:'Maria & Melios'
         },
         {
             Nr: '2',
