@@ -18,7 +18,7 @@ export const products = [
             name: 'Philips Avent magnetronsterilisator',
             picture: 'https://cdn.webshopapp.com/shops/269916/files/334058138/image.jpg',
             URL: 'https://www.prenatal.nl/eten-en-drinken/flessenwarmers-en-sterilisators/philips-avent-magnetronsterilisator-0952340000.html?dwvar_0952340000_kleurnaam_60=Geen%20Kleurcode&cgid=74',
-			candidates:'-'
+			candidates:'Gera & Erland'
         },
         {
             Nr: '4',
@@ -32,7 +32,7 @@ export const products = [
             name: 'Diaper Champ One ',
             picture: 'https://www.prenatal.nl/dw/image/v2/BCBH_PRD/on/demandware.static/-/Sites-prenatal-master/default/dwf3f3faa1/10/121310/121310_1213100021.jpg?sw=650&sh=650&sm=fit',
             URL: 'https://www.prenatal.nl/bad-en-verzorging/verzorgen/luieremmers/diaper-champ-one-1213100021.html?dwvar_1213100021_kleurnaam_60=Lightgrey#q=Diaper%20Champ%20One&start=3',
-			candidates:'-'
+			candidates:'Gera & Erland'
         },
         {
             Nr: '6',
